@@ -1,0 +1,44 @@
+version: 2
+
+seeds:
+    - name: sales_data
+      description: Sample payments
+      columns:
+          - name: invoice_ID
+            description: Description of the invoice_ID column
+            data_type: varchar(255)
+            tests:
+                - unique
+                - not_null
+          - name: branch
+            description: Description of the branch column
+          - name: city
+            description: Description of the city column
+          - name: customer_type
+            description: Description of the customer_type column
+          - name: gender
+            description: Description of the gender column
+          - name: product_line
+            description: Description of the product_line column
+          - name: unit_price
+            description: Description of the unit_price column
+          - name: quantity
+            description: Description of the quantity column
+          - name: tax
+            description: Description of the tax column
+          - name: total
+            description: Description of the total column
+          - name: date
+            description: Description of the date column
+          - name: time
+            description: Description of the time column
+          - name: payment
+            description: Description of the payment column
+          - name: cogs
+            description: Description of the cogs column
+          - name: gross_margin_percentage
+            description: Description of the gross_margin_percentage column
+          - name: gross_income
+            description: Description of the gross_income column
+          - name: rating
+            description: Description of the Rating column
