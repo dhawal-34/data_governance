@@ -4,12 +4,16 @@ seeds:
     - name: sales_data
       description: Sample payments
       columns:
-          - name: invoice_ID
-            description: Description of the invoice_ID column
+          - name: invoice_id
+            description: Description of the invoice_id column
             data_type: varchar(255)
             tests:
-                - unique
-                - not_null
+                - unique:
+                    name: rule_invoice_id_unique
+                    severity: error
+                - not_null:
+                    name: rule_invoice_id_not_null
+                    severity: error
           - name: branch
             description: Description of the branch column
           - name: city
@@ -41,4 +45,4 @@ seeds:
           - name: gross_income
             description: Description of the gross_income column
           - name: rating
-            description: Description of the Rating column
+            description: Description of the rating column
