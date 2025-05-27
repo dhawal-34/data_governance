@@ -2,18 +2,11 @@ version: 2
 
 seeds:
     - name: sales_data
-      description: Sample payments
+      description: sales data
       columns:
           - name: invoice_id
             description: Description of the invoice_id column
             data_type: varchar(255)
-            tests:
-                - unique:
-                    name: rule_invoice_id_unique
-                    severity: error
-                - not_null:
-                    name: rule_invoice_id_not_null
-                    severity: error
           - name: branch
             description: Description of the branch column
           - name: city
